@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Luxury cars 🪙</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="loading-window">
+      <div class="car-loader">
+        <div class="strike"></div>
+        <div class="strike strike2"></div>
+        <div class="strike strike3"></div>
+        <div class="strike strike4"></div>
+        <div class="strike strike5"></div>
+        <div class="car-loader-detail spoiler"></div>
+        <div class="car-loader-detail back"></div>
+        <div class="car-loader-detail center"></div>
+        <div class="car-loader-detail center1"></div>
+        <div class="car-loader-detail front"></div>
+        <div class="car-loader-detail wheel"></div>
+        <div class="car-loader-detail wheel wheel2"></div>
+      </div>
+    </div>
+
+    <main class="main">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#cars">НАШ автопарк</a>
+              </li>
+              <li>
+                <a href="#order">Забронировать</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+971523898989" class="phone">+971 52 389 89 89</a>
+        </div>
+      </header>
+
+      <section class="main-content">
+        <div class="container">
+          <div class="main-info">
+            <h1>Покорите дороги за рулём легендарных автомобилей!</h1>
+            <p>
+              От эксклюзивных спорткаров до гоночных шедевров — выбирайте мечту,
+              садитесь за руль и ощутите мощь премиального авто на полную!
+            </p>
+            <a href="#cars" class="button" id="main-action-button"
+              >Посмотреть автомобили</a
+            >
+          </div>
+          <img
+            src="images/main-car.png"
+            alt="Main car"
+            class="main-image"
+          />
+        </div>
+      </section>
+
+      <div class="black-block"></div>
+    </main>
+
+    <section class="cars" id="cars">
+      <div class="container">
+        <h2>Выберите автомобиль</h2>
+        <div class="cars-content" id="cars-content">
+          <aside class="cars-filter">
+            <ul>
+              <!-- Filters will be added via JavaScript -->
+            </ul>
+          </aside>
+          <div class="cars-items">
+            <!-- Cars will be added via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="container">
+        <img src="images/order-car.png" alt="Oder car" />
+        <form id="orderForm">
+          <h3>Забронируйте автомобиль</h3>
+          <p>
+            Заполните контактные данные, и мы перезвоним вам для обсуждения деталей
+            и подтверждения бронирования
+          </p>
+          <div class="order-form">
+            <input
+              type="text"
+              placeholder="Автомобиль"
+              required
+              readonly
+              id="car"
+            />
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              required
+              id="name"
+            />
+            <input
+              type="text"
+              placeholder="Ваш телефон"
+              required
+              id="phone"
+              minlength="10"
+            />
+            <button
+              class="button"
+              type="button"
+              id="order-action"
+              disabled
+            >
+              Забронировать
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="rights">все права защищены</div>
+      </div>
+    </footer>
+
+    <script>
+      // Hide loading screen once page is fully loaded
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.querySelector('.loading-window').style.display = 'none';
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
