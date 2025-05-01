@@ -138,7 +138,7 @@ body {
   position: relative;
   width: 117px;
   height: 42px;
-  animation: moveAcrossScreen 1.75s linear infinite;
+  animation: moveAcrossScreen 2s linear infinite;
 }
 .car-loader .strike {
   position: absolute;
